@@ -1,0 +1,559 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "name": "Goom Doe",
+      "email": "goom@doe.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "email": "john@example.com",
+      "password": "abcdef"
+    },
+    {
+      "id": 3,
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "password": "qwerty"
+    },
+    {
+      "id": 4,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "password": "password123"
+    }
+  ],
+  "Project": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "description": "프로젝트 1",
+      "owner": 1,
+      "members": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "description": "프로젝트 2",
+      "owner": 3,
+      "members": [3, 4]
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "description": "프로젝트 3",
+      "owner": 2,
+      "members": [1, 2, 3]
+    },
+    {
+      "id": 4,
+      "name": "Project 4",
+      "description": "프로젝트 4",
+      "owner": 4,
+      "members": [2, 4]
+    },
+    {
+      "id": 5,
+      "name": "Project 5",
+      "description": "프로젝트 5",
+      "owner": 1,
+      "members": [1, 3, 4]
+    }
+  ],
+  "CardGroup": [
+    {
+      "id": 1,
+      "title": "카드 그룹 A",
+      "project": 1,
+      "order": 1024
+    },
+    {
+      "id": 2,
+      "title": "카드 그룹 B",
+      "project": 1,
+      "order": 2048
+    },
+    {
+      "id": 3,
+      "title": "카드 그룹 C",
+      "project": 2,
+      "order": 1024
+    },
+    {
+      "id": 4,
+      "title": "카드 그룹 D",
+      "project": 2,
+      "order": 2048
+    },
+    {
+      "id": 5,
+      "title": "카드 그룹 E",
+      "project": 3,
+      "order": 1024
+    },
+    {
+      "id": 6,
+      "title": "카드 그룹 F",
+      "project": 3,
+      "order": 2048
+    },
+    {
+      "id": 7,
+      "title": "카드 그룹 G",
+      "project": 4,
+      "order": 1024
+    },
+    {
+      "id": 8,
+      "title": "카드 그룹 H",
+      "project": 4,
+      "order": 2048
+    },
+    {
+      "id": 9,
+      "title": "카드 그룹 I",
+      "project": 5,
+      "order": 1024
+    },
+    {
+      "id": 10,
+      "title": "카드 그룹 J",
+      "project": 5,
+      "order": 2048
+    },
+    {
+      "id": 11,
+      "title": "카드 그룹 K",
+      "project": 5,
+      "order": 3072
+    },
+    {
+      "id": 12,
+      "title": "카드 그룹 L",
+      "project": 2,
+      "order": 3072
+    },
+    {
+      "id": 13,
+      "title": "카드 그룹 M",
+      "project": 3,
+      "order": 3072
+    },
+    {
+      "id": 14,
+      "title": "카드 그룹 N",
+      "project": 1,
+      "order": 3072
+    },
+    {
+      "id": 15,
+      "title": "카드 그룹 O",
+      "project": 5,
+      "order": 4096
+    }
+  ],
+  "Card": [
+    {
+      "id": 1,
+      "title": "카드 A",
+      "detail": "카드 A 내용",
+      "group": 1,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2023-12-25",
+      "order": 1024
+    },
+    {
+      "id": 2,
+      "title": "카드 B",
+      "detail": "카드 B 내용",
+      "group": 1,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-15",
+      "order": 2048
+    },
+    {
+      "id": 3,
+      "title": "카드 C",
+      "detail": "카드 C 내용",
+      "group": 2,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-31",
+      "order": 1024
+    },
+    {
+      "id": 4,
+      "title": "카드 D",
+      "detail": "카드 D 내용",
+      "group": 2,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-20",
+      "order": 2048
+    },
+    {
+      "id": 5,
+      "title": "카드 E",
+      "detail": "카드 E 내용",
+      "group": 3,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-25",
+      "order": 1024
+    },
+    {
+      "id": 6,
+      "title": "카드 F",
+      "detail": "카드 F 내용",
+      "group": 3,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-18",
+      "order": 2048
+    },
+    {
+      "id": 7,
+      "title": "카드 G",
+      "detail": "카드 G 내용",
+      "group": 4,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-30",
+      "order": 1024
+    },
+    {
+      "id": 8,
+      "title": "카드 H",
+      "detail": "카드 H 내용",
+      "group": 4,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-19",
+      "order": 2048
+    },
+    {
+      "id": 9,
+      "title": "카드 I",
+      "detail": "카드 I 내용",
+      "group": 5,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-24",
+      "order": 1024
+    },
+    {
+      "id": 10,
+      "title": "카드 J",
+      "detail": "카드 J 내용",
+      "group": 5,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-17",
+      "order": 2048
+    },
+    {
+      "id": 11,
+      "title": "카드 K",
+      "detail": "카드 K 내용",
+      "group": 6,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-29",
+      "order": 1024
+    },
+    {
+      "id": 12,
+      "title": "카드 L",
+      "detail": "카드 L 내용",
+      "group": 6,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-16",
+      "order": 2048
+    },
+    {
+      "id": 13,
+      "title": "카드 M",
+      "detail": "카드 M 내용",
+      "group": 7,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-23",
+      "order": 1024
+    },
+    {
+      "id": 14,
+      "title": "카드 N",
+      "detail": "카드 N 내용",
+      "group": 7,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-16",
+      "order": 2048
+    },
+    {
+      "id": 15,
+      "title": "카드 O",
+      "detail": "카드 O 내용",
+      "group": 8,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-28",
+      "order": 1024
+    },
+    {
+      "id": 16,
+      "title": "카드 P",
+      "detail": "카드 P 내용",
+      "group": 8,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-15",
+      "order": 2048
+    },
+    {
+      "id": 17,
+      "title": "카드 Q",
+      "detail": "카드 Q 내용",
+      "group": 9,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-22",
+      "order": 1024
+    },
+    {
+      "id": 18,
+      "title": "카드 R",
+      "detail": "카드 R 내용",
+      "group": 9,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-15",
+      "order": 2048
+    },
+    {
+      "id": 19,
+      "title": "카드 S",
+      "detail": "카드 S 내용",
+      "group": 10,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-27",
+      "order": 1024
+    },
+    {
+      "id": 20,
+      "title": "카드 T",
+      "detail": "카드 T 내용",
+      "group": 10,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-14",
+      "order": 2048
+    },
+    {
+      "id": 21,
+      "title": "카드 U",
+      "detail": "카드 U 내용",
+      "group": 11,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-21",
+      "order": 1024
+    },
+    {
+      "id": 22,
+      "title": "카드 V",
+      "detail": "카드 V 내용",
+      "group": 11,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-14",
+      "order": 2048
+    },
+    {
+      "id": 23,
+      "title": "카드 W",
+      "detail": "카드 W 내용",
+      "group": 12,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-26",
+      "order": 1024
+    },
+    {
+      "id": 24,
+      "title": "카드 X",
+      "detail": "카드 X 내용",
+      "group": 12,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-13",
+      "order": 2048
+    },
+    {
+      "id": 25,
+      "title": "카드 Y",
+      "detail": "카드 Y 내용",
+      "group": 13,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-20",
+      "order": 1024
+    },
+    {
+      "id": 26,
+      "title": "카드 Z",
+      "detail": "카드 Z 내용",
+      "group": 13,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-13",
+      "order": 2048
+    },
+    {
+      "id": 27,
+      "title": "카드 AA",
+      "detail": "카드 AA 내용",
+      "group": 14,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-25",
+      "order": 1024
+    },
+    {
+      "id": 28,
+      "title": "카드 BB",
+      "detail": "카드 BB 내용",
+      "group": 14,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-12",
+      "order": 2048
+    },
+    {
+      "id": 29,
+      "title": "카드 CC",
+      "detail": "카드 CC 내용",
+      "group": 15,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-19",
+      "order": 1024
+    },
+    {
+      "id": 30,
+      "title": "카드 DD",
+      "detail": "카드 DD 내용",
+      "group": 15,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-12",
+      "order": 2048
+    },
+    {
+      "id": 31,
+      "title": "카드 EE",
+      "detail": "카드 EE 내용",
+      "group": 1,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-24",
+      "order": 3072
+    },
+    {
+      "id": 32,
+      "title": "카드 FF",
+      "detail": "카드 FF 내용",
+      "group": 1,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-11",
+      "order": 4096
+    },
+    {
+      "id": 33,
+      "title": "카드 GG",
+      "detail": "카드 GG 내용",
+      "group": 2,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-18",
+      "order": 3072
+    },
+    {
+      "id": 34,
+      "title": "카드 HH",
+      "detail": "카드 HH 내용",
+      "group": 2,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-11",
+      "order": 4096
+    },
+    {
+      "id": 35,
+      "title": "카드 II",
+      "detail": "카드 II 내용",
+      "group": 3,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-23",
+      "order": 3072
+    },
+    {
+      "id": 36,
+      "title": "카드 JJ",
+      "detail": "카드 JJ 내용",
+      "group": 3,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-10",
+      "order": 4096
+    },
+    {
+      "id": 37,
+      "title": "카드 KK",
+      "detail": "카드 KK 내용",
+      "group": 4,
+      "creator": 1,
+      "assignee": 2,
+      "deadline": "2024-01-17",
+      "order": 3072
+    },
+    {
+      "id": 38,
+      "title": "카드 LL",
+      "detail": "카드 LL 내용",
+      "group": 4,
+      "creator": 3,
+      "assignee": 4,
+      "deadline": "2024-01-10",
+      "order": 4096
+    },
+    {
+      "id": 39,
+      "title": "카드 MM",
+      "detail": "카드 MM 내용",
+      "group": 5,
+      "creator": 2,
+      "assignee": 1,
+      "deadline": "2024-01-22",
+      "order": 3072
+    },
+    {
+      "id": 40,
+      "title": "카드 NN",
+      "detail": "카드 NN 내용",
+      "group": 5,
+      "creator": 4,
+      "assignee": 3,
+      "deadline": "2024-01-09",
+      "order": 4096
+    }
+  ]
+}
