@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import { CardGroup, TestData } from "global";
 import axios from "axios";
 
+// 안 쓰는 프롭 정리, 카드그룹 및 카드 스테이트 하나씩 받아서 최대한 통일
 interface CardGroupProps {
   testData: TestData;
 
   group: CardGroup;
-  setCardGroupId: React.Dispatch<React.SetStateAction<CardGroup["id"] | null>>;
-  setCardGroupOrder: React.Dispatch<React.SetStateAction<CardGroup["order"]>>;
+  setCardGroupId: (state: number | null) => void;
+  setCardGroupOrder: (state: number) => void;
   prevGroupOrder: number;
-  setPrevGroupOrder: React.Dispatch<
-    React.SetStateAction<CardGroup["order"] | null>
-  >;
+  setPrevGroupOrder: (state: number) => void;
   setGroupArrange: React.Dispatch<React.SetStateAction<boolean>>;
   isLeave: boolean;
   setIsLeave: React.Dispatch<React.SetStateAction<boolean>>;

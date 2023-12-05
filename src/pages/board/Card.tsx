@@ -1,9 +1,8 @@
-import { Card } from "global";
-
+/// setCard 하나로 스테이트 통일할 것
 interface CardProps {
   card: Card;
   groupIdProp: number;
-  setGroupId: React.Dispatch<React.SetStateAction<number>>;
+  setGroupId: (state: number) => void;
   // setPrevGroupId: React.Dispatch<React.SetStateAction<number>>;
   setCardIdProp: React.Dispatch<React.SetStateAction<Card["id"]>>;
   setCardOrder: React.Dispatch<React.SetStateAction<Card["order"]>>;
@@ -47,7 +46,7 @@ const Card = ({
     e.preventDefault();
   };
 
-  const handleDrop = async (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDrop = async () => {
     setCardOrder(card.order);
     setGroupId(groupIdProp);
 
@@ -58,11 +57,11 @@ const Card = ({
     <div
       className=""
       draggable="true"
-      onDragStart={(e) => handleDragStartCard(e)}
-      onDragEnter={(e) => handleDragEnter(e)}
-      onDragOver={(e) => handleDragOver(e)}
-      onDrop={(e) => handleDrop(e)}
-      onDragEnd={(e) => handleDragEnd(e)}
+      onDragStart={handleDragStartCard}
+      onDragEnter={handleDragEnter}
+      onDragOver={handleDragOver}
+      onDrop={handleDrop}
+      onDragEnd={handleDragEnd}
     >
       {card.title}
     </div>

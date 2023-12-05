@@ -1,4 +1,3 @@
-import { TestData } from "global";
 import BoardHeader from "./BoardHeader";
 import CardGroup from "./CardGroup";
 import { useEffect, useState } from "react";
@@ -63,6 +62,7 @@ const Board = () => {
   }, [groupArrange]);
 
   // 카드변경시 실행
+  /// Card를 받는 카드 스테이트 하나로 통일할 것
   const [cardId, setCardId] = useState<number>(0);
   const [cardOrder, setCardOrder] = useState<number>(0);
   const [cardArrange, setCardArrange] = useState<boolean>(false);
